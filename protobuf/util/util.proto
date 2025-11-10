@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package util;
 
-option go_package = "github.com/aiotoo/console-lorawan-api/go/v4/util";
+option go_package = "github.com/adarko-io/lwns-api/go/v4/util";
 
 import "google/protobuf/timestamp.proto";
 

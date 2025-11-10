@@ -1,17 +1,17 @@
 version: "2"
 services:
-  console-lorawan-api-go:
+  lwns-api-go:
     build:
       context: .
       dockerfile: Dockerfile-go
     command: bash -c "cd go && make all"
     volumes:
-      - ./:/console-lorawan-api
-  console-lorawan-api-swagger:
+      - ./:/lwns-api
+  lwns-api-swagger:
     build:
       context: .
       dockerfile: Dockerfile-go
     command: bash -c "cd swagger && make all"
     volumes:
-      - ./:/console-lorawan-api
+      - ./:/lwns-api
   

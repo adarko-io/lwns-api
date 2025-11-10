@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package service;
 
-option go_package = "github.com/aiotoo/console-lorawan-api/go/v4/external/service";
+option go_package = "github.com/adarko-io/lwns-api/go/v4/external/service";
 
 import "google/api/annotations.proto";
 

@@ -1,4 +1,4 @@
-module github.com/aiotoo/console-lorawan-api/swagger
+module github.com/adarko-io/lwns-api/swagger
 
 go 1.22.5
 

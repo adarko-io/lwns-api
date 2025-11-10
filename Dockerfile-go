@@ -1,6 +1,6 @@
 FROM golang:1.22.5-alpine
 
-ENV PROJECT_PATH=/console-lorawan-api
+ENV PROJECT_PATH=/lwns-api
 RUN apk add --no-cache make git bash protobuf protobuf-dev
 
 RUN mkdir -p $PROJECT_PATH

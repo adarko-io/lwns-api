@@ -1,4 +1,4 @@
-module github.com/aiotoo/console-lorawan-api/go/v4
+module github.com/adarko-io/lwns-api/go/v4
 
 go 1.22.5
 

@@ -4,7 +4,7 @@ all:
 	docker-compose up
 
 go:
-	docker-compose run --rm console-lorawan-api-go
+	docker-compose run --rm lwns-api-go
 
 swagger:
-	docker-compose run --rm console-lorawan-api-swagger
+	docker-compose run --rm lwns-api-swagger
