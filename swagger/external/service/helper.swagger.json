@@ -264,6 +264,24 @@
         },
         "region": {
           "$ref": "#/definitions/serviceRegionsData"
+        },
+        "ts003Version": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/utilTs003Version"
+          }
+        },
+        "ts004Version": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/utilTs004Version"
+          }
+        },
+        "ts005Version": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/utilTs005Version"
+          }
         }
       }
     },
@@ -435,6 +453,36 @@
       ],
       "default": "EU868",
       "title": "- EU868: EU868\n - US915: US915\n - CN779: CN779\n - EU433: EU433\n - AU915: AU915\n - CN470: CN470\n - AS923: AS923\n - AS923_2: AS923 with -1.80 MHz frequency offset\n - AS923_3: AS923 with -6.60 MHz frequency offset\n - AS923_4: (AS923 with -5.90 MHz frequency offset).\n - KR920: KR920\n - IN865: IN865\n - RU864: RU864\n - ISM2400: ISM2400 (LoRaWAN 2.4 GHz)"
+    },
+    "utilTs003Version": {
+      "type": "string",
+      "enum": [
+        "TS003_NOT_IMPLEMENTED",
+        "TS003_V100",
+        "TS003_V200"
+      ],
+      "default": "TS003_NOT_IMPLEMENTED",
+      "title": "- TS003_NOT_IMPLEMENTED: Not implemented.\n - TS003_V100: v1.0.0.\n - TS003_V200: v2.0.0"
+    },
+    "utilTs004Version": {
+      "type": "string",
+      "enum": [
+        "TS004_NOT_IMPLEMENTED",
+        "TS004_V100",
+        "TS004_V200"
+      ],
+      "default": "TS004_NOT_IMPLEMENTED",
+      "title": "- TS004_NOT_IMPLEMENTED: Not implemented.\n - TS004_V100: v1.0.0.\n - TS004_V200: v2.0.0"
+    },
+    "utilTs005Version": {
+      "type": "string",
+      "enum": [
+        "TS005_NOT_IMPLEMENTED",
+        "TS005_V100",
+        "TS005_V200"
+      ],
+      "default": "TS005_NOT_IMPLEMENTED",
+      "title": "- TS005_NOT_IMPLEMENTED: Not implemented.\n - TS005_V100: v1.0.0.\n - TS005_V200: v2.0.0"
     }
   }
 }

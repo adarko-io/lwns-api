@@ -67,6 +67,12 @@ message ListEnumResponse {
 
   RegionsData region = 7;
 
+  repeated util.Ts003Version ts003_version = 8;
+
+  repeated util.Ts004Version ts004_version = 9;
+
+  repeated util.Ts005Version ts005_version = 10;
+
 }
 
 message ListRegionsResponse {
