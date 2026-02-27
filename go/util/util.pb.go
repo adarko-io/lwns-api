@@ -921,6 +921,162 @@ func (RelayModeActivation) EnumDescriptor() ([]byte, []int) {
 	return file_util_util_proto_rawDescGZIP(), []int{14}
 }
 
+type Ts003Version int32
+
+const (
+	// Not implemented.
+	Ts003Version_TS003_NOT_IMPLEMENTED Ts003Version = 0
+	// v1.0.0.
+	Ts003Version_TS003_V100 Ts003Version = 1
+	// v2.0.0
+	Ts003Version_TS003_V200 Ts003Version = 2
+)
+
+// Enum value maps for Ts003Version.
+var (
+	Ts003Version_name = map[int32]string{
+		0: "TS003_NOT_IMPLEMENTED",
+		1: "TS003_V100",
+		2: "TS003_V200",
+	}
+	Ts003Version_value = map[string]int32{
+		"TS003_NOT_IMPLEMENTED": 0,
+		"TS003_V100":            1,
+		"TS003_V200":            2,
+	}
+)
+
+func (x Ts003Version) Enum() *Ts003Version {
+	p := new(Ts003Version)
+	*p = x
+	return p
+}
+
+func (x Ts003Version) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (Ts003Version) Descriptor() protoreflect.EnumDescriptor {
+	return file_util_util_proto_enumTypes[15].Descriptor()
+}
+
+func (Ts003Version) Type() protoreflect.EnumType {
+	return &file_util_util_proto_enumTypes[15]
+}
+
+func (x Ts003Version) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use Ts003Version.Descriptor instead.
+func (Ts003Version) EnumDescriptor() ([]byte, []int) {
+	return file_util_util_proto_rawDescGZIP(), []int{15}
+}
+
+type Ts004Version int32
+
+const (
+	// Not implemented.
+	Ts004Version_TS004_NOT_IMPLEMENTED Ts004Version = 0
+	// v1.0.0.
+	Ts004Version_TS004_V100 Ts004Version = 1
+	// v2.0.0
+	Ts004Version_TS004_V200 Ts004Version = 2
+)
+
+// Enum value maps for Ts004Version.
+var (
+	Ts004Version_name = map[int32]string{
+		0: "TS004_NOT_IMPLEMENTED",
+		1: "TS004_V100",
+		2: "TS004_V200",
+	}
+	Ts004Version_value = map[string]int32{
+		"TS004_NOT_IMPLEMENTED": 0,
+		"TS004_V100":            1,
+		"TS004_V200":            2,
+	}
+)
+
+func (x Ts004Version) Enum() *Ts004Version {
+	p := new(Ts004Version)
+	*p = x
+	return p
+}
+
+func (x Ts004Version) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (Ts004Version) Descriptor() protoreflect.EnumDescriptor {
+	return file_util_util_proto_enumTypes[16].Descriptor()
+}
+
+func (Ts004Version) Type() protoreflect.EnumType {
+	return &file_util_util_proto_enumTypes[16]
+}
+
+func (x Ts004Version) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use Ts004Version.Descriptor instead.
+func (Ts004Version) EnumDescriptor() ([]byte, []int) {
+	return file_util_util_proto_rawDescGZIP(), []int{16}
+}
+
+type Ts005Version int32
+
+const (
+	// Not implemented.
+	Ts005Version_TS005_NOT_IMPLEMENTED Ts005Version = 0
+	// v1.0.0.
+	Ts005Version_TS005_V100 Ts005Version = 1
+	// v2.0.0
+	Ts005Version_TS005_V200 Ts005Version = 2
+)
+
+// Enum value maps for Ts005Version.
+var (
+	Ts005Version_name = map[int32]string{
+		0: "TS005_NOT_IMPLEMENTED",
+		1: "TS005_V100",
+		2: "TS005_V200",
+	}
+	Ts005Version_value = map[string]int32{
+		"TS005_NOT_IMPLEMENTED": 0,
+		"TS005_V100":            1,
+		"TS005_V200":            2,
+	}
+)
+
+func (x Ts005Version) Enum() *Ts005Version {
+	p := new(Ts005Version)
+	*p = x
+	return p
+}
+
+func (x Ts005Version) String() string {
+	return protoimpl.X.EnumStringOf(x.Descriptor(), protoreflect.EnumNumber(x))
+}
+
+func (Ts005Version) Descriptor() protoreflect.EnumDescriptor {
+	return file_util_util_proto_enumTypes[17].Descriptor()
+}
+
+func (Ts005Version) Type() protoreflect.EnumType {
+	return &file_util_util_proto_enumTypes[17]
+}
+
+func (x Ts005Version) Number() protoreflect.EnumNumber {
+	return protoreflect.EnumNumber(x)
+}
+
+// Deprecated: Use Ts005Version.Descriptor instead.
+func (Ts005Version) EnumDescriptor() ([]byte, []int) {
+	return file_util_util_proto_rawDescGZIP(), []int{17}
+}
+
 type Location struct {
 	state         protoimpl.MessageState
 	sizeCache     protoimpl.SizeCache
@@ -1383,10 +1539,24 @@ var file_util_util_proto_rawDesc = []byte{
 	0x45, 0x4c, 0x41, 0x59, 0x5f, 0x4d, 0x4f, 0x44, 0x45, 0x10, 0x01, 0x12, 0x0b, 0x0a, 0x07, 0x44,
 	0x59, 0x4e, 0x41, 0x4d, 0x49, 0x43, 0x10, 0x02, 0x12, 0x19, 0x0a, 0x15, 0x45, 0x4e, 0x44, 0x5f,
 	0x44, 0x45, 0x56, 0x49, 0x43, 0x45, 0x5f, 0x43, 0x4f, 0x4e, 0x54, 0x52, 0x4f, 0x4c, 0x4c, 0x45,
-	0x44, 0x10, 0x03, 0x42, 0x2a, 0x5a, 0x28, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f,
-	0x6d, 0x2f, 0x61, 0x64, 0x61, 0x72, 0x6b, 0x6f, 0x2d, 0x69, 0x6f, 0x2f, 0x6c, 0x77, 0x6e, 0x73,
-	0x2d, 0x61, 0x70, 0x69, 0x2f, 0x67, 0x6f, 0x2f, 0x76, 0x34, 0x2f, 0x75, 0x74, 0x69, 0x6c, 0x62,
-	0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
+	0x44, 0x10, 0x03, 0x2a, 0x49, 0x0a, 0x0c, 0x54, 0x73, 0x30, 0x30, 0x33, 0x56, 0x65, 0x72, 0x73,
+	0x69, 0x6f, 0x6e, 0x12, 0x19, 0x0a, 0x15, 0x54, 0x53, 0x30, 0x30, 0x33, 0x5f, 0x4e, 0x4f, 0x54,
+	0x5f, 0x49, 0x4d, 0x50, 0x4c, 0x45, 0x4d, 0x45, 0x4e, 0x54, 0x45, 0x44, 0x10, 0x00, 0x12, 0x0e,
+	0x0a, 0x0a, 0x54, 0x53, 0x30, 0x30, 0x33, 0x5f, 0x56, 0x31, 0x30, 0x30, 0x10, 0x01, 0x12, 0x0e,
+	0x0a, 0x0a, 0x54, 0x53, 0x30, 0x30, 0x33, 0x5f, 0x56, 0x32, 0x30, 0x30, 0x10, 0x02, 0x2a, 0x49,
+	0x0a, 0x0c, 0x54, 0x73, 0x30, 0x30, 0x34, 0x56, 0x65, 0x72, 0x73, 0x69, 0x6f, 0x6e, 0x12, 0x19,
+	0x0a, 0x15, 0x54, 0x53, 0x30, 0x30, 0x34, 0x5f, 0x4e, 0x4f, 0x54, 0x5f, 0x49, 0x4d, 0x50, 0x4c,
+	0x45, 0x4d, 0x45, 0x4e, 0x54, 0x45, 0x44, 0x10, 0x00, 0x12, 0x0e, 0x0a, 0x0a, 0x54, 0x53, 0x30,
+	0x30, 0x34, 0x5f, 0x56, 0x31, 0x30, 0x30, 0x10, 0x01, 0x12, 0x0e, 0x0a, 0x0a, 0x54, 0x53, 0x30,
+	0x30, 0x34, 0x5f, 0x56, 0x32, 0x30, 0x30, 0x10, 0x02, 0x2a, 0x49, 0x0a, 0x0c, 0x54, 0x73, 0x30,
+	0x30, 0x35, 0x56, 0x65, 0x72, 0x73, 0x69, 0x6f, 0x6e, 0x12, 0x19, 0x0a, 0x15, 0x54, 0x53, 0x30,
+	0x30, 0x35, 0x5f, 0x4e, 0x4f, 0x54, 0x5f, 0x49, 0x4d, 0x50, 0x4c, 0x45, 0x4d, 0x45, 0x4e, 0x54,
+	0x45, 0x44, 0x10, 0x00, 0x12, 0x0e, 0x0a, 0x0a, 0x54, 0x53, 0x30, 0x30, 0x35, 0x5f, 0x56, 0x31,
+	0x30, 0x30, 0x10, 0x01, 0x12, 0x0e, 0x0a, 0x0a, 0x54, 0x53, 0x30, 0x30, 0x35, 0x5f, 0x56, 0x32,
+	0x30, 0x30, 0x10, 0x02, 0x42, 0x2a, 0x5a, 0x28, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63,
+	0x6f, 0x6d, 0x2f, 0x61, 0x64, 0x61, 0x72, 0x6b, 0x6f, 0x2d, 0x69, 0x6f, 0x2f, 0x6c, 0x77, 0x6e,
+	0x73, 0x2d, 0x61, 0x70, 0x69, 0x2f, 0x67, 0x6f, 0x2f, 0x76, 0x34, 0x2f, 0x75, 0x74, 0x69, 0x6c,
+	0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -1401,7 +1571,7 @@ func file_util_util_proto_rawDescGZIP() []byte {
 	return file_util_util_proto_rawDescData
 }
 
-var file_util_util_proto_enumTypes = make([]protoimpl.EnumInfo, 15)
+var file_util_util_proto_enumTypes = make([]protoimpl.EnumInfo, 18)
 var file_util_util_proto_msgTypes = make([]protoimpl.MessageInfo, 5)
 var file_util_util_proto_goTypes = []any{
 	(Modulation)(0),               // 0: util.Modulation
@@ -1419,19 +1589,22 @@ var file_util_util_proto_goTypes = []any{
 	(CadPeriodicity)(0),           // 12: util.CadPeriodicity
 	(SecondChAckOffset)(0),        // 13: util.SecondChAckOffset
 	(RelayModeActivation)(0),      // 14: util.RelayModeActivation
-	(*Location)(nil),              // 15: util.Location
-	(*KeyEnvelope)(nil),           // 16: util.KeyEnvelope
-	(*Metric)(nil),                // 17: util.Metric
-	(*MetricDataset)(nil),         // 18: util.MetricDataset
-	(*JoinServerContext)(nil),     // 19: util.JoinServerContext
-	(*timestamppb.Timestamp)(nil), // 20: google.protobuf.Timestamp
+	(Ts003Version)(0),             // 15: util.Ts003Version
+	(Ts004Version)(0),             // 16: util.Ts004Version
+	(Ts005Version)(0),             // 17: util.Ts005Version
+	(*Location)(nil),              // 18: util.Location
+	(*KeyEnvelope)(nil),           // 19: util.KeyEnvelope
+	(*Metric)(nil),                // 20: util.Metric
+	(*MetricDataset)(nil),         // 21: util.MetricDataset
+	(*JoinServerContext)(nil),     // 22: util.JoinServerContext
+	(*timestamppb.Timestamp)(nil), // 23: google.protobuf.Timestamp
 }
 var file_util_util_proto_depIdxs = []int32{
 	5,  // 0: util.Location.source:type_name -> util.LocationSource
-	20, // 1: util.Metric.timestamps:type_name -> google.protobuf.Timestamp
-	18, // 2: util.Metric.datasets:type_name -> util.MetricDataset
+	23, // 1: util.Metric.timestamps:type_name -> google.protobuf.Timestamp
+	21, // 2: util.Metric.datasets:type_name -> util.MetricDataset
 	7,  // 3: util.Metric.kind:type_name -> util.MetricKind
-	16, // 4: util.JoinServerContext.app_s_key:type_name -> util.KeyEnvelope
+	19, // 4: util.JoinServerContext.app_s_key:type_name -> util.KeyEnvelope
 	5,  // [5:5] is the sub-list for method output_type
 	5,  // [5:5] is the sub-list for method input_type
 	5,  // [5:5] is the sub-list for extension type_name
@@ -1511,7 +1684,7 @@ func file_util_util_proto_init() {
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_util_util_proto_rawDesc,
-			NumEnums:      15,
+			NumEnums:      18,
 			NumMessages:   5,
 			NumExtensions: 0,
 			NumServices:   0,

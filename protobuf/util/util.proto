@@ -251,23 +251,7 @@ enum CodecRuntime {
   JS = 2;
 }
 
-// enum MeasurementKind {
-//   // Unknown (in which case it is not tracked).
-//   UNKNOWN = 0;
 
-//   // Incrementing counters that never decrease (these are not reset on each
-//   // reading).
-//   COUNTER = 1;
-
-//   // Counters that do get reset upon reading.
-//   ABSOLUTE = 2;
-
-//   // E.g. a temperature value.
-//   GAUGE = 3;
-
-//   // E.g. a firmware version, true / false value.
-//   STRING = 4;
-// }
 
 enum CadPeriodicity {
   // 1 second.
@@ -321,4 +305,37 @@ enum RelayModeActivation {
 
   // End-device controlled.
   END_DEVICE_CONTROLLED = 3;
+}
+
+enum Ts003Version {
+  // Not implemented.
+  TS003_NOT_IMPLEMENTED = 0;
+
+  // v1.0.0.
+  TS003_V100 = 1;
+
+  // v2.0.0
+  TS003_V200 = 2;
+}
+
+enum Ts004Version {
+  // Not implemented.
+  TS004_NOT_IMPLEMENTED = 0;
+
+  // v1.0.0.
+  TS004_V100 = 1;
+
+  // v2.0.0
+  TS004_V200 = 2;
+}
+
+enum Ts005Version {
+  // Not implemented.
+  TS005_NOT_IMPLEMENTED = 0;
+
+  // v1.0.0.
+  TS005_V100 = 1;
+
+  // v2.0.0
+  TS005_V200 = 2;
 }
