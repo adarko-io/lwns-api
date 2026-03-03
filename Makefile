@@ -1,10 +1,10 @@
-.PHONY: go swagger js
+.PHONY: all go swagger js
 
 all:
-	docker-compose up
+	docker compose up
 
 go:
-	docker-compose run --rm lwns-api-go
+	docker compose run --rm lwns-api-go
 
 swagger:
-	docker-compose run --rm lwns-api-swagger
+	docker compose run --rm lwns-api-swagger

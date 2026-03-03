@@ -186,6 +186,9 @@ message UploadRequest {
 
   // Common device configuration for all devices in the CSV
   Device common_config = 3;
+
+  // Tenant ID for multi-tenancy support
+  string tenant_id = 4;
 }
 
 message UploadReportItem {
@@ -200,6 +203,9 @@ message UploadReportItem {
 
   // The error message if the upload failed; empty if successful
   string error_message = 4;
+
+  // Tenant ID for multi-tenancy support
+  string tenant_id = 5;
 }
 
 message UploadResponse {
@@ -223,6 +229,9 @@ message UploadResponse {
   
   // Report file path (will be populated after processing completes)
   string report_filename = 7;
+
+  // Tenant ID for multi-tenancy support
+  string tenant_id = 8;
 }
 
 message ListReportFilesRequest {
@@ -240,6 +249,9 @@ message ListReportFilesRequest {
 
   // End date for filtering reports
   google.protobuf.Timestamp end_date = 5;
+
+  // Tenant ID for filtering reports by tenant
+  string tenant_id = 6;
 }
 
 message ListReportFilesResponse {
@@ -266,11 +278,17 @@ message ReportFile {
 
   // Number of failed records in the report
   uint32 failure_count = 5;
+
+  // Tenant ID for multi-tenancy support
+  string tenant_id = 6;
 }
 
 message DownloadReportRequest {
   // The name of the file to be downloaded
   string filename = 1;
+
+  // Tenant ID for multi-tenancy support
+  string tenant_id = 2;
 }
 
 message DownloadReportResponse {

@@ -147,6 +147,10 @@ func local_request_DeviceService_ListReportFiles_0(ctx context.Context, marshale
 
 }
 
+var (
+	filter_DeviceService_BulkUploadReport_0 = &utilities.DoubleArray{Encoding: map[string]int{"filename": 0}, Base: []int{1, 1, 0}, Check: []int{0, 1, 2}}
+)
+
 func request_DeviceService_BulkUploadReport_0(ctx context.Context, marshaler runtime.Marshaler, client DeviceServiceClient, req *http.Request, pathParams map[string]string) (DeviceService_BulkUploadReportClient, runtime.ServerMetadata, error) {
 	var protoReq DownloadReportRequest
 	var metadata runtime.ServerMetadata
@@ -167,6 +171,13 @@ func request_DeviceService_BulkUploadReport_0(ctx context.Context, marshaler run
 
 	if err != nil {
 		return nil, metadata, status.Errorf(codes.InvalidArgument, "type mismatch, parameter: %s, error: %v", "filename", err)
+	}
+
+	if err := req.ParseForm(); err != nil {
+		return nil, metadata, status.Errorf(codes.InvalidArgument, "%v", err)
+	}
+	if err := runtime.PopulateQueryParameters(&protoReq, req.Form, filter_DeviceService_BulkUploadReport_0); err != nil {
+		return nil, metadata, status.Errorf(codes.InvalidArgument, "%v", err)
 	}
 
 	stream, err := client.BulkUploadReport(ctx, &protoReq)

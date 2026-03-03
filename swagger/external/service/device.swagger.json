@@ -138,6 +138,13 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "tenantId",
+            "description": "Tenant ID for multi-tenancy support.",
+            "in": "query",
+            "required": false,
+            "type": "string"
           }
         ],
         "tags": [
@@ -258,6 +265,13 @@
             "required": false,
             "type": "string",
             "format": "date-time"
+          },
+          {
+            "name": "tenantId",
+            "description": "Tenant ID for filtering reports by tenant.",
+            "in": "query",
+            "required": false,
+            "type": "string"
           }
         ],
         "tags": [
@@ -1384,6 +1398,10 @@
           "type": "integer",
           "format": "int64",
           "title": "Number of failed records in the report"
+        },
+        "tenantId": {
+          "type": "string",
+          "title": "Tenant ID for multi-tenancy support"
         }
       },
       "title": "Message representing details of a single report file"
@@ -1424,6 +1442,10 @@
         "errorMessage": {
           "type": "string",
           "title": "The error message if the upload failed; empty if successful"
+        },
+        "tenantId": {
+          "type": "string",
+          "title": "Tenant ID for multi-tenancy support"
         }
       }
     },
@@ -1465,6 +1487,10 @@
         "reportFilename": {
           "type": "string",
           "title": "Report file path (will be populated after processing completes)"
+        },
+        "tenantId": {
+          "type": "string",
+          "title": "Tenant ID for multi-tenancy support"
         }
       }
     },
